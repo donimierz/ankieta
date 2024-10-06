@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ochrona lokalnych szkół</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: auto auto;
+            padding: 10px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        table {
+            width: 99%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 32px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ecf0f1;
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .column {
+            display: inline-block;
+            /*width: 20%;*/
+            height: auto;
+            padding: 10px;
+            margin: auto 10px;
+            /*background-color: #ecf0f1;*/
+            border-bottom: 1px solid gray;
+        }
+
+        .svg-container {
+            /*max-width: 100px;*/
+            /*height: 10%;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .text-container {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: large;
+        }
+
+        .header {
+            background-color: #e0e0e0;
+
+            color: white;
+            /*height: 50px;*/
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        .header div {
+            display: inline-block;
+        }
+
+        .column2,
+        .column3 {
+            margin: 15px auto;
+            width: 100%;
+        }
+
+        .column3 h2 {
+            margin: 0;
+            padding: 0;
+            /*line-height: normal;*/
+        }
+        .column2 {
+            padding: 15px 0 5px 0;
+
+            display: inline-block;
+            /*height: 99px;*/
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+        }
+
+
+        .column3 {
+            padding: 0 0 5px 0;
+            display: inline-block;
+            /*width: 30%;*/
+            /*height: 99px;*/
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            /*background-color: #f0f0f0;*/
+            /*border: 2px solid gray;*/
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+            margin-bottom: 50px;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 10px 0 10px;
+            /*padding: 0px 0px 5px 0px;*/
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            width: 24px;
+            height: 24px;
+        }
+
+        .header h2 {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+        }
+
+        .header .checkbox-container {
+            /*display: flex;*/
+            /*align-items: center;*/
+            float: left;
+
+        }
+
+        .header .checkbox-container input[type="checkbox"] {
+            width: 22px;
+            height: 22px;
+        }
+        .header .checkbox-container input[type="radio"] {
+            width: 32px;
+            height: 32px;
+        }
+
+        .column3 p {
+            margin: 10px 5px;
+            padding: 0;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        img {
+            height: 48px;
+            width: 48px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="column2">
+    <!--    <img class="icon" src="https://img.icons8.com/color/48/000000/school.png" alt="szkoła">-->
+    <strong>Rozwiazanie:</strong> *działanie, które rozwiąze problem
+    <h1>Centralizacja szkół</h1>
+</div>
+
+<div class="column2">
+    <strong>Kategoria:</strong> *obszar, którego dotyczy problem
+    <h2>Jakosc edukacji</h2>
+</div>
+
+<div class="column2">
+    <strong>Problem:</strong> *wyzwanie związane z tą kategorią
+    <h2>Centralizacja usług negatywnie wpływa na nasze lokalna edukacje.</h2>
+</div>
+
+
+<div class="column3">
+    <div class="header">
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox1" value="1">
+        </div>
+        <div>
+            <h2>
+                <a href="#" onclick="">
+                    <label for="checkbox1">
+                        Utworzenie lokalnych rad oświatowych
+                    </label>
+                </a>
+            </h2>
+        </div>
+    </div>
+    <div class="column">
+        <div class="svg-container">
+            <img src="note/1A.svg" alt="SVG Note 1A low">
+        </div>
+        <div class="text-container">
+            Krótkoterminowy, 3-6 miesięcy
+        </div>
+    </div>
+    <div class="column">
+        <div class="svg-container">
+            <img src="note/2A.svg" alt="Note 2A low">
+        </div>
+        <div class="text-container">
+            Niski, koszty organizacyjne
+        </div>
+    </div>
+    <div class="column">
+        <div class="svg-container">
+            <img src="note/3C.svg" alt="Note 3C high">
+        </div>
+        <div class="text-container">
+            Wysoki
+        </div>
+    </div>
+
+    <p>Utworzenie lokalnych rad oświatowych w każdej miejscowości z samorządową szkołą. Rady będą składać
+        się z rodziców, nauczycieli i przedstawicieli społeczności lokalnej. Będą one odpowiedzialne za
+        podejmowanie decyzji dotyczących funkcjonowania szkół i usług edukacyjnych w danej miejscowości.</p>
+</div>
+
+
+<div class="column3">
+    <div class="header">
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox2" value="1">
+        </div>
+        <div>
+            <h2>
+                <a href="#" onclick="">
+                    <label for="checkbox2">
+                        Decentralizacja budżetu oświatowego
+                    </label>
+                </a>
+            </h2>
+        </div>
+    </div>
+    <div class="column">
+        <div class="svg-container">
+            <img src="note/1B.svg" alt="SVG Note 1B medium">
+        </div>
+        <div class="text-container">
+            Średnioterminowy, 6-12 miesięcy
+        </div>
+    </div>
+    <div class="column">
+        <div class="svg-container">
+            <img src="note/2B.svg" alt="Note 2B medium">
+        </div>
+        <div class="text-container">
+            Średni, koszty reorganizacji budżetu
+        </div>
+    </div>
+    <div class="column">
+        <div class="svg-container">
+            <img src="note/3C.svg" alt="Note 3C high">
+        </div>
+        <div class="text-container">
+            Wysoki
+        </div>
+    </div>
+
+    <p>
+        Przekazanie części budżetu oświatowego bezpośrednio do szkół, aby mogły one samodzielnie decydować o wydatkach
+        na usługi i programy edukacyjne dostosowane do lokalnych potrzeb. Gmina będzie odpowiedzialna za zapewnienie
+        minimalnego finansowania, a szkoły będą mogły pozyskiwać dodatkowe środki z innych źródeł.
+    </p>
+
+</div>
+
+<div class="column3">
+    <div class="header">
+        <div class="checkbox-container">
+            <input type="checkbox" id="checkbox3" value="1">
+        </div>
+        <div>
+            <h2>
+                <a href="#" onclick="">
+                    <label for="checkbox3">
+                        Partnerstwa publiczno-społeczne
+                    </label>
+                </a>
+            </h2>
+        </div>
+    </div>
+    <div class="column">
+        <div class="svg-container">
+            <img src="note/1C.svg" alt="Note 1C high">
+        </div>
+        <div class="text-container">
+            Długoterminowy, 12-24 miesiące
+        </div>
+    </div>
+    <div class="column">
+        <div class="svg-container">
+            <img src="note/2B.svg" alt="Note 2B medium">
+        </div>
+        <div class="text-container">
+            koszty koordynacji partnerstw
+        </div>
+    </div>
+    <div class="column">
+        <div class="svg-container">
+            <img src="note/3B.svg" alt="Note 3B medium">
+        </div>
+        <div class="text-container">
+            Średni
+        </div>
+    </div>
+
+    <p>
+        Nawiązanie partnerstw między szkołami a organizacjami pozarządowymi, firmami i instytucjami z danej
+        miejscowości.
+        Partnerstwa te będą wspierać szkoły w świadczeniu usług edukacyjnych, kulturalnych i społecznych dostosowanych
+        do
+        lokalnych potrzeb. Szkoły będą pełnić rolę centrów społeczności lokalnej.
+    </p>
+</div>
+
+</body>
+</html>
