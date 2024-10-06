@@ -5,14 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ochrona lokalnych szkół</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: auto auto;
-            padding: 10px;
+        body, html {
+            /*background-color: #e9ecef;*/
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            /*color: #333; !* Dark grey color *!*/
+            /*background-color: #fff; !* White background *!*/
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content  {
+            /*display: flex;*/
+            justify-content: center;
+            align-items: center;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            text-align: center;
+            background-color: #ffffff;
+
+            max-width: 1200px;
+            min-height: 450px;
+            width: 100%;
+
+            /*height: 70%;*/
+            /*flex: 1 0 auto;*/
+            /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);*/
+            margin: 0px auto;
         }
 
         h1 {
-            color: #2c3e50;
+            color: black;
+            font-size: 50px;
         }
 
         table {
@@ -90,6 +117,7 @@
             padding: 0;
             /*line-height: normal;*/
         }
+
         .column2 {
             padding: 15px 0 5px 0;
 
@@ -149,9 +177,10 @@
             width: 22px;
             height: 22px;
         }
+
         .header .checkbox-container input[type="radio"] {
-            width: 32px;
-            height: 32px;
+            width: 44px;
+            height: 44px;
         }
 
         .column3 p {
@@ -169,166 +198,171 @@
     </style>
 </head>
 <body>
+<div class="content">
 
+    <div class="group">
+        <div class="column2">
+            <!--    <img class="icon" src="https://img.icons8.com/color/48/000000/school.png" alt="szkoła">-->
+            <strong>Rozwiazanie:</strong> *działanie, które rozwiąze problem
+            <h1>Centralizacja szkół</h1>
+        </div>
 
-<div class="column2">
-    <!--    <img class="icon" src="https://img.icons8.com/color/48/000000/school.png" alt="szkoła">-->
-    <strong>Rozwiazanie:</strong> *działanie, które rozwiąze problem
-    <h1>Centralizacja szkół</h1>
-</div>
+        <div class="column2">
+            <strong>Kategoria:</strong> *obszar, którego dotyczy problem
+            <h2>Jakosc edukacji</h2>
+        </div>
 
-<div class="column2">
-    <strong>Kategoria:</strong> *obszar, którego dotyczy problem
-    <h2>Jakosc edukacji</h2>
-</div>
-
-<div class="column2">
-    <strong>Problem:</strong> *wyzwanie związane z tą kategorią
-    <h2>Centralizacja usług negatywnie wpływa na nasze lokalna edukacje.</h2>
-</div>
-
-
-<div class="column3">
-    <div class="header">
-        <div class="checkbox-container">
-            <input type="radio" id="radio1" name="radio" value="1">
-        </div>
-        <div>
-            <h2>
-                <a href="#" onclick="">
-                    <label for="radio1">
-                        Utworzenie lokalnych rad oświatowych
-                    </label>
-                </a>
-            </h2>
-        </div>
-    </div>
-    <div class="column">
-        <div class="svg-container">
-            <img src="note/1A.svg" alt="SVG Note 1A low">
-        </div>
-        <div class="text-container">
-            Krótkoterminowy, 3-6 miesięcy
-        </div>
-    </div>
-    <div class="column">
-        <div class="svg-container">
-            <img src="note/2A.svg" alt="Note 2A low">
-        </div>
-        <div class="text-container">
-            Niski, koszty organizacyjne
-        </div>
-    </div>
-    <div class="column">
-        <div class="svg-container">
-            <img src="note/3C.svg" alt="Note 3C high">
-        </div>
-        <div class="text-container">
-            Priorytet wysoki
+        <div class="column2">
+            <strong>Problem:</strong> *wyzwanie związane z tą kategorią
+            <h2>Centralizacja usług negatywnie wpływa na nasze lokalna edukacje.</h2>
         </div>
     </div>
 
-    <p>Utworzenie lokalnych rad oświatowych w każdej miejscowości z samorządową szkołą. Rady będą składać
-        się z rodziców, nauczycieli i przedstawicieli społeczności lokalnej. Będą one odpowiedzialne za
-        podejmowanie decyzji dotyczących funkcjonowania szkół i usług edukacyjnych w danej miejscowości.</p>
-</div>
+
+    <div class="column3">
+        <div class="header">
+            <div class="checkbox-container">
+                <input type="radio" id="radio1" name="radio" value="1">
+            </div>
+            <div>
+                <h2>
+                    <a href="#" onclick="">
+                        <label for="radio1">
+                            Utworzenie lokalnych rad oświatowych
+                        </label>
+                    </a>
+                </h2>
+            </div>
+        </div>
+        <div class="column">
+            <div class="svg-container">
+                <img src="note/1A.svg" alt="SVG Note 1A low">
+            </div>
+            <div class="text-container">
+                Krótkoterminowy, 3-6 miesięcy
+            </div>
+        </div>
+        <div class="column">
+            <div class="svg-container">
+                <img src="note/2A.svg" alt="Note 2A low">
+            </div>
+            <div class="text-container">
+                Niski, koszty organizacyjne
+            </div>
+        </div>
+        <div class="column">
+            <div class="svg-container">
+                <img src="note/3C.svg" alt="Note 3C high">
+            </div>
+            <div class="text-container">
+                Priorytet wysoki
+            </div>
+        </div>
+
+        <p>Utworzenie lokalnych rad oświatowych w każdej miejscowości z samorządową szkołą. Rady będą składać
+            się z rodziców, nauczycieli i przedstawicieli społeczności lokalnej. Będą one odpowiedzialne za
+            podejmowanie decyzji dotyczących funkcjonowania szkół i usług edukacyjnych w danej miejscowości.</p>
+    </div>
 
 
-<div class="column3">
-    <div class="header">
-        <div class="checkbox-container">
-            <input type="radio" id="radio2" name="radio" value="1">
+    <div class="column3">
+        <div class="header">
+            <div class="checkbox-container">
+                <input type="radio" id="radio2" name="radio" value="1">
+            </div>
+            <div>
+                <h2>
+                    <a href="#" onclick="">
+                        <label for="radio2">
+                            Decentralizacja budżetu oświatowego
+                        </label>
+                    </a>
+                </h2>
+            </div>
         </div>
-        <div>
-            <h2>
-                <a href="#" onclick="">
-                    <label for="radio2">
-                        Decentralizacja budżetu oświatowego
-                    </label>
-                </a>
-            </h2>
+        <div class="column">
+            <div class="svg-container">
+                <img src="note/1B.svg" alt="SVG Note 1B medium">
+            </div>
+            <div class="text-container">
+                Średnioterminowy, 6-12 miesięcy
+            </div>
         </div>
-    </div>
-    <div class="column">
-        <div class="svg-container">
-            <img src="note/1B.svg" alt="SVG Note 1B medium">
+        <div class="column">
+            <div class="svg-container">
+                <img src="note/2B.svg" alt="Note 2B medium">
+            </div>
+            <div class="text-container">
+                Średni, koszty reorganizacji budżetu
+            </div>
         </div>
-        <div class="text-container">
-            Średnioterminowy, 6-12 miesięcy
+        <div class="column">
+            <div class="svg-container">
+                <img src="note/3C.svg" alt="Note 3C high">
+            </div>
+            <div class="text-container">
+                Priorytet wysoki
+            </div>
         </div>
-    </div>
-    <div class="column">
-        <div class="svg-container">
-            <img src="note/2B.svg" alt="Note 2B medium">
-        </div>
-        <div class="text-container">
-            Średni, koszty reorganizacji budżetu
-        </div>
-    </div>
-    <div class="column">
-        <div class="svg-container">
-            <img src="note/3C.svg" alt="Note 3C high">
-        </div>
-        <div class="text-container">
-            Priorytet wysoki
-        </div>
+
+        <p>
+            Przekazanie części budżetu oświatowego bezpośrednio do szkół, aby mogły one samodzielnie decydować o
+            wydatkach
+            na usługi i programy edukacyjne dostosowane do lokalnych potrzeb. Gmina będzie odpowiedzialna za zapewnienie
+            minimalnego finansowania, a szkoły będą mogły pozyskiwać dodatkowe środki z innych źródeł.
+        </p>
+
     </div>
 
-    <p>
-        Przekazanie części budżetu oświatowego bezpośrednio do szkół, aby mogły one samodzielnie decydować o wydatkach
-        na usługi i programy edukacyjne dostosowane do lokalnych potrzeb. Gmina będzie odpowiedzialna za zapewnienie
-        minimalnego finansowania, a szkoły będą mogły pozyskiwać dodatkowe środki z innych źródeł.
-    </p>
+    <div class="column3">
+        <div class="header">
+            <div class="checkbox-container">
+                <input type="radio" id="radio3" name="radio" value="1">
+            </div>
+            <div>
+                <h2>
+                    <a href="#" onclick="">
+                        <label for="radio3">
+                            Partnerstwa publiczno-społeczne
+                        </label>
+                    </a>
+                </h2>
+            </div>
+        </div>
+        <div class="column">
+            <div class="svg-container">
+                <img src="note/1C.svg" alt="Note 1C high">
+            </div>
+            <div class="text-container">
+                Długoterminowy, 12-24 miesiące
+            </div>
+        </div>
+        <div class="column">
+            <div class="svg-container">
+                <img src="note/2B.svg" alt="Note 2B medium">
+            </div>
+            <div class="text-container">
+                koszty koordynacji partnerstw
+            </div>
+        </div>
+        <div class="column">
+            <div class="svg-container">
+                <img src="note/3B.svg" alt="Note 3B medium">
+            </div>
+            <div class="text-container">
+                Priorytet średni
+            </div>
+        </div>
 
-</div>
-
-<div class="column3">
-    <div class="header">
-        <div class="checkbox-container">
-            <input type="radio" id="radio3" name="radio" value="1">
-        </div>
-        <div>
-            <h2>
-                <a href="#" onclick="">
-                    <label for="radio3">
-                        Partnerstwa publiczno-społeczne
-                    </label>
-                </a>
-            </h2>
-        </div>
+        <p>
+            Nawiązanie partnerstw między szkołami a organizacjami pozarządowymi, firmami i instytucjami z danej
+            miejscowości.
+            Partnerstwa te będą wspierać szkoły w świadczeniu usług edukacyjnych, kulturalnych i społecznych
+            dostosowanych
+            do
+            lokalnych potrzeb. Szkoły będą pełnić rolę centrów społeczności lokalnej.
+        </p>
     </div>
-    <div class="column">
-        <div class="svg-container">
-            <img src="note/1C.svg" alt="Note 1C high">
-        </div>
-        <div class="text-container">
-            Długoterminowy, 12-24 miesiące
-        </div>
-    </div>
-    <div class="column">
-        <div class="svg-container">
-            <img src="note/2B.svg" alt="Note 2B medium">
-        </div>
-        <div class="text-container">
-            koszty koordynacji partnerstw
-        </div>
-    </div>
-    <div class="column">
-        <div class="svg-container">
-            <img src="note/3B.svg" alt="Note 3B medium">
-        </div>
-        <div class="text-container">
-            Priorytet średni
-        </div>
-    </div>
-
-    <p>
-        Nawiązanie partnerstw między szkołami a organizacjami pozarządowymi, firmami i instytucjami z danej
-        miejscowości.
-        Partnerstwa te będą wspierać szkoły w świadczeniu usług edukacyjnych, kulturalnych i społecznych dostosowanych
-        do
-        lokalnych potrzeb. Szkoły będą pełnić rolę centrów społeczności lokalnej.
-    </p>
 </div>
 
 </body>
