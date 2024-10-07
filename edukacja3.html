@@ -202,6 +202,18 @@
             background-color: blue;
             font-weight: bold;
         }
+
+        /* Style for the parent element when radio is checked */
+        input[type="radio"]:checked ~ .column3 {
+            /*border-color: #3498db;*/
+            /*border: 1px solid red;*/
+        }
+
+        .column3 {
+            /*border-color: #3498db;*/
+            border: 1px solid #eeeeee;
+        }
+
     </style>
 </head>
 <body>
@@ -380,6 +392,46 @@
         </p>
     </div>
 </div>
+
+<script>
+    (function () {
+        // Ensure all radio buttons start unchecked and border is reset
+        document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
+            radio.checked = false;
+            let column3 = radio.closest('.column3');
+            if (column3) {
+                column3.style.border = '1px solid #eeeeee';
+            }
+        });
+
+        // Add a change event listener to each radio button
+        document.querySelectorAll('input[type="radio"]').forEach(function (radio) {
+            radio.addEventListener('change', function () {
+                // Reset the border for all column3 elements
+                document.querySelectorAll('.column3').forEach(function (col) {
+                    col.style.border = '1px solid #eeeeee';
+                    let column3header = col.querySelector('.header');
+                    if (column3header) {
+                        column3header.style.borderBottom = 'none';
+                    }
+                });
+
+                // Set the border for the currently checked radio button's column3
+                if (this.checked) {
+                    let column3 = this.closest('.column3');
+                    if (column3) {
+                        column3.style.border = '1px solid blue';
+                    }
+                    let column3header = column3.querySelector('.header');
+                    if (column3header) {
+                        column3header.style.borderBottom = '1px solid blue';
+                        // column3header.style.color = 'white';
+                    }
+                }
+            });
+        });
+    })();
+</script>
 
 </body>
 </html>
