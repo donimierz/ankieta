@@ -1,6 +1,16 @@
 # ankieta
 ankieta.donimierz.pl
 
+Ankiety sluza zebraniu informacji potrzebnych do ulozenia hierarchi wykorzystywanej do weryfikacji wszelkich praw narzucanych z gory by zweryfikowac czy sa zgodne z wartosciami spolecznosci.
+
+To cyfrowy blizniak spolecznosci pozwalajacy na automatyzacje zadan zwiazanych ze spolecznoscia:
+
+- pytania pozwalajace na okreslenia hierarchi wartosci poprzez zadanie kilku pytan ulatwiajacych okreslenie waznosci
+- edukacja, prace/finanse, rodzina
+
+- pokazanie skutkow dzialania tych decyzji na podstawie kolejnych pytan gdzie np. wybrano prace/finanse, rodzine, edukacje 
+
+Na koniec pokazanie decyzji podejmowanych w skpolecznosci lokalnej na gminie z ostatniego roku i pokazanie na ile te decyzje sa zgodne. 
 
 ## TODO
 
